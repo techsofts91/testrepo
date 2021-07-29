@@ -1,3 +1,5 @@
+//Comment added on uploaded file
+
 // The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
 const functions = require('firebase-functions');
 
@@ -32,4 +34,5 @@ exports.marianasPoints = functions.https.onRequest(async (req, res) => {
   }*/
   
   //res.redirect(303, snapshot.ref.toString());
+  
 });
