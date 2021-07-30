@@ -12,7 +12,7 @@ exports.marianasPoints = functions.https.onRequest(async (req, res) => {
   // Grab the text parameter.
   const pointsInGame = req.query.pointsEarned;
   //const userID = req.query.userID;
-  const finalTickoins = pointsInGame * 2;
+  const finalTickoins = pointsInGame * 10  + 1;
 
   const marianasRef = await admin.firestore().collection('users_info').doc('LqUSggrY6Am5vQvA3yvE').collection('highscores_minigames').doc('marianastrench');
 
